@@ -29,7 +29,10 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+          <a class="brand" href="http://www.trantect.com"title="Trantect">
+	          <img src="assets/themes/twitter/bootstrap/img/trantect.png">
+              Blog
+          </a>
           <ul class="nav">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
@@ -44,15 +47,64 @@
       <div class="content">
         {{ content }}
       </div>
+      
+    </div>
 
-      <footer>
-        <p>&copy; {{ site.author.name }} 2012 
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
+<footer class="footer">
+ <div class="container">
+		
+		<div class="row">
+		
+			<div class="span4">
+				<h2>
+					<span class="slash">//</span>
+					Contact Us
+				</h2>
+				<address>
+                    <strong>Nanjing Trantect Technologies Co., Ltd.</strong><br/>
+                    A242, Bld. 1, Southeast University Science Park, 6 Changjiang Backstreet<br/>
+                    Nanjing, China 21008<br/>
+                    <abbr title="Phone">P:</abbr> +86 25 8445 0444</br>
+                    <a href="mailto:webmaster@trantect.com" style="color:#0088cc;">webmaster@trantect.com</a>
+	            </address>
+			</div>
+			
+			<div class="span4">
+				</br>
+				</br>
+				<address>
+                    <strong>南京川陀大匠信息技术有限公司</strong><br/>
+                    南京市玄武区长江后街6号东南大学科技园1号楼A242室<br/>
+                    <abbr title="Phone">P:</abbr> +86 25 8445 0444</br>
+                    <a href="mailto:webmaster@trantect.com" style="color:#0088cc;">webmaster@trantect.com</a>
+	            </address>
+			</div>
+			
+			<div class="span4">
+				<h2>
+					<span class="slash">//</span>
+					Follow Us
+				</h2>
+				<div id="social-r">
+					<a href="#">
+						<img src="assets/themes/twitter/bootstrap/img/facebook.png"/>
+					</a>	
+					<a href="#"> 
+						<img src="assets/themes/twitter/bootstrap/img/twitter.png"/>
+					</a>
+					<a href="#">
+						<img src="assets/themes/twitter/bootstrap/img/weibo.png"/>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+<div id="footers">
+	<p>© Trantect(川陀大匠) 2012</p>
+</div>
+</footer>
 
-    </div> <!-- /container -->
+ <!-- /container -->
 
     {% include JB/analytics %}
   </body>
