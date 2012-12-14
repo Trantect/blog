@@ -9,7 +9,7 @@ tagline: Agile software development for the future world
 
 <p>
 
-  <small><span>{{ post.date | date_to_string }}</span>
+  <small><span id="date">{{ post.date | date_to_string }}</span>
   In:  
   {% for category in post.categories %}   
   <a href="categories.html" class="category_link">
