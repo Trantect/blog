@@ -561,12 +561,6 @@ small {
 cite {
   font-style: normal;
 }
-#blog {
-  color: white;
-  font-size: 16px;
-  float: left;
-  margin-top: 27px;
-}
 code,
 pre {
   padding: 0 3px 2px;
@@ -4268,3 +4262,5 @@ a.badge:hover {
 .invisible {
   visibility: hidden;
 }
+
+
