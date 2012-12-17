@@ -359,7 +359,7 @@ p {
   margin: 0 0 9px;
 }
 p small {
-  font-size: 11px;
+  font-size: 13px;
   color: #999999;
 }
 .lead {
@@ -560,6 +560,12 @@ small {
 }
 cite {
   font-style: normal;
+}
+#blog {
+  color: white;
+  font-size: 16px;
+  float: left;
+  margin-top: 27px;
 }
 code,
 pre {
