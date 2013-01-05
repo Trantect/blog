@@ -31,3 +31,4 @@ Bootstrap 中已包括了一些 responsive design ，如 grid 系统和 nav-bar 
 
 **结论：** 响应性的Web设计终将成为一种趋势，但响应性的Web设计是如此的远不止一个趋势，它是一种新的思维方式。
 在一个多设备的世界，上网本似乎是随处可见，响应性的Web设计给人的感觉更像是一个才刚刚开始展现其潜在能量自然的过程。
+<img src="/assets/themes/twitter/bootstrap/img/trantectdialer.jpg">
