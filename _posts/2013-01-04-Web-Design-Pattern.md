@@ -1,6 +1,6 @@
 ---
 layout: post
-title:"Web Design Pattern: Responsive Table for Mobile & Desktop Web"
+title: "Web Design Pattern&#58; Responsive Table for Mobile &amp; Desktop Web"
 published: true
 categories:
 - announcement
