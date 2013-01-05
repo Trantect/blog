@@ -1,6 +1,13 @@
 ---
 layout: default
+title: Web Design Pattern: Responsive Table for Mobile & Desktop Web
 published: true
+categories:
+- announcement
+- blog 
+tags: 
+- trantect
+- github
 ---
 
 最近做的一个 Web App，整体框架是基于Bootstrap，需要支持包括桌面、平板设备和手机等多种尺寸的浏览器。Bootstrap 是由Twitter推出的一个非常受欢迎的、灵活的及开源的用于前端开发的工具包。现在，越来越多的移动设备充斥市场，改变了人们使用互联网的方式，重要的是基于Bootstrap的精美网页也在不断增长 ，仅仅只追求桌面的美观是远远不够的，要时刻关照小型移动设备用户的视觉感受。
@@ -8,7 +15,7 @@ published: true
 **Pattern name: ** 移动和桌面Web响应式表格设计
 
 **Problem: ** 改善在小型移动设备上的 Web App 中的表格使用体验，使用同一套 HTML 和 CSS 支持从桌面设备到手持终端等多种尺寸的浏览器，保持一致的风格而又能够根据设备情况调节部分元素的展现形式。
-
+<img src="/assets/themes/twitter/bootstrap/img/pattern.jpg">
 上图中，整个页面使用了 Bootstrap 。其内容以表格为主，这与以文字为主的网页大不相同。页面变窄时，表格的布局仍然被保持，需要在一行中显示多栏信息。此时可能造成上图中的文字折行或需要左右滚动屏幕。这会让用户使用起来很不方便。（在测试过程中，通过缩小浏览器的宽度检查在不同设备上的效果。）需要有一种手段可以在较窄的屏幕上自动调整表格布局，如减少列数或将同一条记录的多栏信息多行显示。
 
 **Problem: ** ***Responsive Design***（响应式设计）中 Medias Query可根据设备和分辨率的不同而使用不同的样式。
