@@ -8,7 +8,7 @@ published: true
 **Pattern name: ** 移动和桌面Web响应式表格设计
 
 **Problem: ** 改善在小型移动设备上的 Web App 中的表格使用体验，使用同一套 HTML 和 CSS 支持从桌面设备到手持终端等多种尺寸的浏览器，保持一致的风格而又能够根据设备情况调节部分元素的展现形式。
-
+<img src="/assets/themes/twitter/bootstrap/img/pattern-1.jpg">
 上图中，整个页面使用了 Bootstrap 。其内容以表格为主，这与以文字为主的网页大不相同。页面变窄时，表格的布局仍然被保持，需要在一行中显示多栏信息。此时可能造成上图中的文字折行或需要左右滚动屏幕。这会让用户使用起来很不方便。（在测试过程中，通过缩小浏览器的宽度检查在不同设备上的效果。）需要有一种手段可以在较窄的屏幕上自动调整表格布局，如减少列数或将同一条记录的多栏信息多行显示。
 
 **Problem: ** ***Responsive Design***（响应式设计）中 Medias Query可根据设备和分辨率的不同而使用不同的样式。
@@ -31,4 +31,3 @@ Bootstrap 中已包括了一些 responsive design ，如 grid 系统和 nav-bar 
 
 **结论：** 响应性的Web设计终将成为一种趋势，但响应性的Web设计是如此的远不止一个趋势，它是一种新的思维方式。
 在一个多设备的世界，上网本似乎是随处可见，响应性的Web设计给人的感觉更像是一个才刚刚开始展现其潜在能量自然的过程。
-<img src="/assets/themes/twitter/bootstrap/img/trantectdialer.jpg">
