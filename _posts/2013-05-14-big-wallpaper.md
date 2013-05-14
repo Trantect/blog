@@ -37,8 +37,3 @@ Python based wallpaper updating applet from Boston BigPicture for Unity.
 ## Run it
 
 Type ```BigWallpaper``` in the *Dash Home* of Unity launcher, and click the icon.
-
-## Screen short
-![picture alt](http://placekitten.com/200/300)
-![picture alt](http://placekitten.com/200/300)
-
