@@ -7,7 +7,7 @@ layout: default
 Python based wallpaper updating applet from Boston BigPicture for Unity.
 ## Outline
 
-Big Wallpaper is an desktop software based on GTK.
+	Big Wallpaper is an desktop software based on GTK.
 
 ## Building Debian/Ubuntu package
 
