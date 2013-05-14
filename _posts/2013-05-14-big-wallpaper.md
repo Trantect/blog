@@ -7,7 +7,7 @@ layout: default
 ## Outline
 Big Wallpaper is an desktop software based on Python and GTK for Unity.It can fetch images of the world most hottest news from the specific web sites you configure.
 
-## default image source
+## Default image source
 - [boston.com](http://www.boston.com/bigpicture)
 - [theatlantic.com](http://www.theatlantic.com/infocus/)
 - [latimes.com](http://framework.latimes.com/)
