@@ -45,3 +45,7 @@ layout: default
 ## Run it
 
 Type ```BigWallpaper``` in the *Dash Home* of Unity launcher, and click the icon.
+
+## Get source code here
+	[https://github.com/yaleh/BigWallpaper.git](https://github.com/yaleh/BigWallpaper.git)
+
