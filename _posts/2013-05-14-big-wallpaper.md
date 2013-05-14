@@ -9,9 +9,9 @@ Python based wallpaper updating applet from Boston BigPicture for Unity.
 
 	Big Wallpaper is an desktop software based on GTK.It can fetch images of the world most hottest news from the web site below:
 
-- item www.boston.com
-- item www.boston.com
-- item www.boston.com
+- www.boston.com
+- www.boston.com
+- www.boston.com
 
 
 
