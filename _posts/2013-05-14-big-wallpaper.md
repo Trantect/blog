@@ -4,9 +4,6 @@ layout: default
 
 ---
 
-BigWallpaper
-============
-
 Python based wallpaper updating applet from Boston BigPicture for Unity.
 
 ## Building Debian/Ubuntu package
