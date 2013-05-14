@@ -1,13 +1,14 @@
 ---
+published: true
 layout: post
 title: Trantect Blog at Github
-published: true
-categories:
-- announcement
-- blog 
+categories: 
+  - announcement
+  - blog
 tags: 
-- trantect
-- github
+  - trantect
+  - github
+
 ---
 
 Months ago, we set up a WordPress based blog at a VPS. But soon after that, we experienced a crash of the VPS and reinstalled the whole system. Even we backuped all the posts of WordPress, we didn't set up WordPress again at that VPS, since it's not safe.
