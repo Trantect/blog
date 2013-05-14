@@ -5,7 +5,7 @@ layout: default
 ---
 
 Python based wallpaper updating applet from Boston BigPicture for Unity.
-## outline
+## Outline
 
 Big Wallpaper is an desktop software based on GTK.
 
