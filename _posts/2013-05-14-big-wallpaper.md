@@ -7,9 +7,7 @@ layout: default
 Python based wallpaper updating applet from Boston BigPicture for Unity.
 ## Outline
 
-	Big Wallpaper is an desktop software based on GTK.It can fetch images of the world most hottest news from the web site below:
-
-	- [boston.com](http://www.boston.com/bigpicture)
+	Big Wallpaper is an desktop software based on GTK.It can fetch images of the world most hottest news from the web site such as [boston.com](http://www.boston.com/bigpicture)
 
 
 ## Building Debian/Ubuntu package
