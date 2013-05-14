@@ -38,6 +38,6 @@ Python based wallpaper updating applet from Boston BigPicture for Unity.
 
 Type ```BigWallpaper``` in the *Dash Home* of Unity launcher, and click the icon.
 
-## Screen shot
+## Screen short
+![picture alt](http://placekitten.com/200/300)
 
-![mahua](mahua-logo.jpg)
