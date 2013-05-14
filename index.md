@@ -27,8 +27,4 @@ tagline: Agile software development for the future world
 <p>
   {{ post.content}}
 </p>
-
-<p>
-trantectaaaaa
-</p>
   {% endfor %}
