@@ -13,8 +13,6 @@ Python based wallpaper updating applet from Boston BigPicture for Unity.
 - www.boston.com
 - www.boston.com
 
-
-
 ## Building Debian/Ubuntu package
 
 ### Update changelog (optional)
