@@ -1,10 +1,12 @@
 ---
+published: true
 layout: page
 title: Trantect
 tagline: Agile software development for the future world
+
 ---
 
-  {% for post in site.posts %}
+{% for post in site.posts %}
 ## <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
 
 <p>
@@ -26,8 +28,7 @@ tagline: Agile software development for the future world
   {{ post.content}}
 </p>
 
+<p>
+trantect
+</p>
   {% endfor %}
-
-
-
-
