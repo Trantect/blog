@@ -8,8 +8,7 @@ Python based wallpaper updating applet from Boston BigPicture for Unity.
 ## Outline
 
 Big Wallpaper is an desktop software based on GTK.It can fetch images of the world most hottest news from the web site below
-- [boston.com](http://www.boston.com/bigpicture)
-- [theatlantic.com](http://www.theatlantic.com/infocus/)
+- [boston.com](http://www.boston.com/bigpicture) - [theatlantic.com](http://www.theatlantic.com/infocus/)
 - [latimes.com](http://framework.latimes.com/)
 - [nbcnews.com](http://photoblog.nbcnews.com/)
 - [reuters.com](http://blogs.reuters.com/fullfocus/)
