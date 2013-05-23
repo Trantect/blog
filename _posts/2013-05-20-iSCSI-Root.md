@@ -2,44 +2,44 @@
 published: true
 layout: post
 title: iSCSI Root (part 1)
-categories:
+categories: 
   - blog
-tags:
+tags: 
   - iSCSI
   - ipxe
   - diskless environment
 
 ---
-## What is iSCSI-Root?
-iSCSI-Root is an solution to build an diskless desktop computing environment supporting multiple OSes from Trantect.
-## How does it work?
-iSCSI-Root use below tools to achieve the goal.
+
+## What is iSCSI-Root
+iSCSI-Root is an iSCSI based diskless desktop computing solution from Trantect. It supports both Linux and Windows (as client instances). The centralized storage leads to great scalibilties and flexibilities, and also easy backup solutions. With giga-bit ethernet, the performance is good enough comparing the common desktop environment.
+
+## How does it work
+Following packages and solutions are applied for iSCSI-Root:
 
 * [iPXE](http://ipxe.org/)
 * [iSCSI Enterprise Target(iet)](http://iscsitarget.sourceforge.net/)
 * [lvm](http://tldp.org/HOWTO/LVM-HOWTO/)
 
-## How to setup?
+## How to setup
 ### Requirements
-In the iSCSI-Root system, there are three kinds of server:
+Three categories of services are applied for iSCSI-Root:
 
-* TFTP/iPXE server
-* dhcp server
-* iSCSI server
+* TFTP/iPXE services
+* DHCP service
+* iSCSI service
 
-It is unnecessay to host them in seperate machines. You can host some of them in one machine according your needs.
-The below is the scheme using in Trantect currently.
+It is unnecessay to host them in seperate machines. It's up to you to orgnized these services. Following is the overview of current Trantect deployment.
 
-* host dhcp sevice in a route(OpenWrt).
-* host tftp/iPXE, iSCSI services in a PC(Ubuntu).
+* DHCP sevice hosted at a MIPS based WiFi route (OpenWrt).
+* TFTP/iPXE, iSCSI services at a PC (Ubuntu Server).
 
-For better performance, you can use gigabit ethernet in serve machines and desktop client machines to make the network faster.
+For better performance, gigabit ethernet is recommended for iSCSI server and desktop clients.
 
 ### Configuring your DHCP server for iPXE booting
-To let the client booting right, we need to configure dhcp service to route client correctly.
+To boot a client, DHCP service needs to be configured correctly.
 
-In Trantect, we use an route(OpenWrt installed) as the dhcp server.
-so we add config in /etc/config/dhcp.
+In Trantect, we use an route(OpenWrt installed) as for DHCP service. So we added configurations to /etc/config/dhcp.
 
 <pre><code>config 'boot'
         option 'networkid' 'ipxe-booted'
