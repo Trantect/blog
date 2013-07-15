@@ -1,42 +1,19 @@
 ---
 published: true
 layout: default
-
 ---
 
 ## Outline
-	Big Wallpaper is an desktop software based on Python and GTK for Unity. It can fetch images of the world most hottest news from the specific web sites you configure and update your desktop background dynamically on timer.  
+Big Wallpaper is a wallpaper updater for Unity (the default desktop manager of Ubuntu). It updates your wallpaper with popular pictures of the hottest worldwide news, and keeps you synced up with the world.  
 
-## Default image source
-- [boston.com](http://www.boston.com/bigpicture)
-- [theatlantic.com](http://www.theatlantic.com/infocus/)
-- [latimes.com](http://framework.latimes.com/)
-- [nbcnews.com](http://photoblog.nbcnews.com/)
-- [reuters.com](http://blogs.reuters.com/fullfocus/)
+## Supported picture sources
+- [Boston Big Picture](http://www.boston.com/bigpicture)
+- [In Focus of The Atlantic](http://www.theatlantic.com/infocus/)
+- [Framework of the Los Angles Times](http://framework.latimes.com/)
+- [Photo Blog on NBCNEWS.com](http://photoblog.nbcnews.com/)
+- [Reuters Full Focus](http://blogs.reuters.com/fullfocus/)
 
-## Building Debian/Ubuntu package
-
-### Update changelog (optional)
-
-    dch -v VERSION-1
-    
-### Update debian files with setup.py (optional)
-
-    python setup.py sdist
-    
-### Build it
-
-    debuild -us -uc -b
-
-### Build DSC file (optional, for PPA)
-    
-    debuild -tc -S -sa 
-
-### Clean folder debian (optional)
-
-    debuild clean
-
-## Install with PPA repository (Ubuntu)
+## Installation (Ubuntu)
 
     sudo add-apt-repository ppa:yale-huang/ppa
     sudo apt-get update
@@ -46,5 +23,5 @@ layout: default
 
 Type ```BigWallpaper``` in the *Dash Home* of Unity launcher, and click the icon.
 
-## Get source code
+## Access the source code
 [https://github.com/yaleh/BigWallpaper.git](https://github.com/yaleh/BigWallpaper.git)
