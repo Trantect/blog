@@ -3,7 +3,6 @@ published: true
 layout: default
 ---
 
-## Outline
 Big Wallpaper is a wallpaper updater for Unity (the default desktop manager of Ubuntu). It updates your wallpaper with popular pictures of the hottest worldwide news, and keeps you synced up with the world.  
 
 ## Supported picture sources
