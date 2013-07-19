@@ -49,12 +49,12 @@ layout: default
     * Check out code and distribute to slaves
     * Trigger
 
-* Real case study
-    * screenshots visiable 
-    * test environment 
-    * time cost
-    * performence
-    * how many tests, asserts and code lines
+##Real case study
+* screenshots visiable 
+* test environment 
+* time cost
+* performence
+* how many tests, asserts and code lines
 
 ##About Trantect
 
