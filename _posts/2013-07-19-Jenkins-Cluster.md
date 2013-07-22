@@ -1,5 +1,4 @@
-![Jenkins Cluster](
-![](/asserts/jenkins_logo.png)
+![Jenkins Cluster](../assets/jenkins_logo.png)
 
 ##Overview
 
