@@ -132,9 +132,11 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     Create slave VMS referring to the previous chapter **Create Master**
 
 * Clone Slave
-        
+
     * Clone VMS
+
         *  Clone VDI VirtualBox Disk
+
             * Clone Virtual Disk
                 
                 `$ VboxManage clonehd src.vdi dst.vdi`
@@ -146,11 +148,13 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         *  Create a new virtual machine based on new dst.vdi
         
     * Configure network
+
         * Change hostname
             
             `$ sudo vim /etc/hostname` and change it to **jenkinslave01**
             
         *  Bridged adapter
+
         *  Edit configuration file for network
         
             `sudo vim /etc/network/interfaces`
