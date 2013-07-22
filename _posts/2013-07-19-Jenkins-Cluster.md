@@ -34,7 +34,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
  
 	* hardware
 
-			Memory 8.0 GiB
+            Memory 8.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz x 2
             Disk 500GB
             OS type 64-bit
