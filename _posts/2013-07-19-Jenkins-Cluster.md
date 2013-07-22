@@ -17,6 +17,8 @@ Jenkins Cluster is a cluster based on Jenkins, it consists of some instances whi
 
 ### Why is Jenkins needed?
 
+Jenkins provides continuous integration services which help developers to build, test and deploy their projects automatically and rapidly. Within Jenkins, developers just need to focus on development and Jenkins will help to do the other things.
+
 ### Why is Jenkins Cluster needed?
 
 ### Why Jenkins Cluter has a higher performance than Jenkins without hardware upgrade?
