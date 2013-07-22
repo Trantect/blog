@@ -83,7 +83,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     
         `$ VM=Jenkins`
 
-    * Create a 20GB "dynamic" disk
+    * Create a 20GB dynamic disk
     
         `$ VBoxManage createhd --filename $VM.vdi --size 20480`
     
@@ -94,6 +94,13 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     * Copy the most appropriate one
     
         `$ VBoxManage createvm --name $VM --ostype "Ubuntu_64" --register`
+
+    * Add a SATA controller with the dynamic disk attached
+    
+        `$ VBoxManage storagectl $VM --name "SATA Controller" --add sata --controller IntelAHCI`
+        
+        `$ VBoxManage storageattach $VM --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium $VM.vdi`
+        
 * Create SLave
 * Clone SLave
     * Clone VMS
