@@ -77,21 +77,25 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
             SSHD
         
 
-##Set up Jenkins Cluster
-* Clone VMS
-    *  Create a new partition
-        *  lvm tool
-    *  Convert and copy a file
-        *  dd if=input file of=<output file> bs=10M
-    *  Clone VMDK Virtual Machine
-        * Clone new vmdk
-        * cp src.vmdk dst.vmdk
-        * Change uuid of vmdk
-    *  Clone VDI VirtualBox Disk
-        * Clone new vdi 
-        * VboxManage clonehd src.vdi dst.vdi
-        * Change uuid of vdi
-    *  Create a new virtual machine based on new dst.vmdk and dst.vdi
+##Jenkins Cluster Setup 
+* Create Master
+* Create SLave
+* Clone SLave
+    * Clone VMS
+        *  Create a new partition
+            *  lvm tool
+        *  Convert and copy a file
+            *  dd if=input file of=<output file> bs=10M
+        *  Clone VMDK Virtual Machine
+            * Clone new vmdk
+            * cp src.vmdk dst.vmdk
+            * Change uuid of vmdk
+        *  Clone VDI VirtualBox Disk
+            * Clone new vdi 
+            * VboxManage clonehd src.vdi dst.vdi
+            * Change uuid of vdi
+        *  Create a new virtual machine based on new dst.vmdk and dst.vdi
+        *  
 * Configure network
     *  Bridged adapter
     *  Edit configuration file for network /etc/network/interfaces
