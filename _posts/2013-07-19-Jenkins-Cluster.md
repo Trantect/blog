@@ -101,6 +101,29 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         
         `$ VBoxManage storageattach $VM --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium $VM.vdi`
         
+    * Add an IDE controller with a DVD driver attached, and the install ISO inserted into the driver
+    
+        `$ VBoxManage storagectl $VM --name "IDE Controller" --add ide`
+        
+        `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium  /path/to/ubuntu-11.10-desktop-amd64.iso`
+        
+    * Misc system settings
+    
+        `$ VBoxManage modifyvm $VM --ioapic on`
+        
+        `$ VBoxManage modifyvm $VM --boot1 dvd --boot2 disk --boot3 none --boot4 none`
+        
+        `$ VBoxManage modifyvm $VM --memory 2048 --vram 128`
+        
+        `$ VBoxManage modifyvm $VM --nic1 bridged --bridgeadapter1 e1000g0`
+    
+    * Boot up
+    
+        `$ VBoxManage --startvm $VM --type headless`
+    
+    * After you configured OS, shutdown and eject the DVD
+    
+        `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium none`
 * Create SLave
 * Clone SLave
     * Clone VMS
