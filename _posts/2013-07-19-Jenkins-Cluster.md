@@ -32,14 +32,14 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - host machine (physics machine)
  
-	* hardware
+    - hardware
 
             Memory 8.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz x 2
             Disk 500GB
             OS type 64-bit
 
-	* software
+	- software
 
             Ubuntu 11.10 or higher
             Oracle VM VirtualBox 4.1.2
@@ -83,53 +83,53 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
     
     - Use Ubuntu 11.10 as example
 
-            `$ VM=Jenkins`
+        `$ VM=Jenkins`
 
     - Create a 20GB dynamic disk
 
-            `$ VBoxManage createhd --filename $VM.vdi --size 20480`
+        `$ VBoxManage createhd --filename $VM.vdi --size 20480`
     
     - List the OS types VirtualBox recognises
 
-            `$ VBoxManage list ostypes`
+        `$ VBoxManage list ostypes`
 
     - Copy the most appropriate one
 
-            `$ VBoxManage createvm --name $VM --ostype "Ubuntu_64" --register`
+        `$ VBoxManage createvm --name $VM --ostype "Ubuntu_64" --register`
 
     - Add a SATA controller with the dynamic disk attached
 
-            `$ VBoxManage storagectl $VM --name "SATA Controller" --add sata --controller IntelAHCI`
+        `$ VBoxManage storagectl $VM --name "SATA Controller" --add sata --controller IntelAHCI`
 
-            `$ VBoxManage storageattach $VM --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium $VM.vdi`
+        `$ VBoxManage storageattach $VM --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium $VM.vdi`
 
     - Add an IDE controller with a DVD driver attached, and the install ISO inserted into the driver
 
-            `$ VBoxManage storagectl $VM --name "IDE Controller" --add ide`
+        `$ VBoxManage storagectl $VM --name "IDE Controller" --add ide`
 
-            `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium  /path/to/ubuntu-11.10-desktop-amd64.iso`
+        `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium  /path/to/ubuntu-11.10-desktop-amd64.iso`
 
     - Misc system settings
     
         `$ VBoxManage modifyvm $VM --ioapic on`
-        
+
         `$ VBoxManage modifyvm $VM --boot1 dvd --boot2 disk --boot3 none --boot4 none`
-        
+
         `$ VBoxManage modifyvm $VM --memory 2048 --vram 128`
         
         `$ VBoxManage modifyvm $VM --nic1 bridged --bridgeadapter1 e1000g0`
 
     - Boot up
 
-            `$ VBoxManage --startvm $VM --type headless`
+        `$ VBoxManage --startvm $VM --type headless`
 
     - After you configured OS, shutdown and eject the DVD
 
-            `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium none`
-        
+        `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium none`
+
     - Set up hostname
 
-            `$ sudo vim /etc/hostname` and change it to jenkins
+        `$ sudo vim /etc/hostname` and change it to jenkins
     
 - Create slave VMS referring to the previous chapter Create Master
 
