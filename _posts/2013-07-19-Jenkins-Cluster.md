@@ -220,15 +220,17 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 
 ##Real case study
 * Create projects on Jenkins Cluster
-    * Create projects on master or slaves
-        * Project adfreeq will be triggered when code is updated on Github. It runs on master to push the latest code, data and config onto slaves and then triggers adfreeq_master, adfreeq_slave_01 and adfreeq_slave_02 as downstream projects.
-        * Project adfreeq_master runs some test cases on master after project adfreeq is done.
-        * Project adfreeq_slave_01 runs some other test cases on slave01 after project adfreeq is done.
-        * Project adfreeq_slave_02 runs the left test cases on slave02 after project adfreeq is done.
+    * Project adfreeq will be triggered when code is updated on Github. It runs on master to push the latest code, data and config onto slaves and then triggers adfreeq_master, adfreeq_slave_01 and adfreeq_slave_02 as downstream projects.
+    * Project adfreeq_master runs some test cases on master after project adfreeq is done.
+    * Project adfreeq_slave_01 runs some other test cases on slave01 after project adfreeq is done.
+    * Project adfreeq_slave_02 runs the left test cases on slave02 after project adfreeq is done.
         
     ![](../assets/projects_list.png)
 
 * screenshots visiable 
+    
+    ![](../assets/jenkins_slaves.png)
+
 * test environment
     
         Selenose
