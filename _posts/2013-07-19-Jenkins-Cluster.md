@@ -2,27 +2,27 @@
 
 ##Overview
 
-At present Trantect is working on a Django-based project with a lot of test cases based on Selenose. Weeks ago, we found that running these test cases manually cost us too much time. In order to run our test cases automatically and efficiently, we built Jenkins to manage our projects including test cases. Firstly we ran all of them on one single machine, but with the increment of test cases, Jenkins became slower and slower due to its serialization, synchronization and blocking. Then, to improve the performance of Jenkins, we created a Jenkins cluster including one master and two slaves to run our projects and test cases concurrently. separately and distributedly.And the cluster performs well.
+At present, Trantect is working on a Django-based project with a lot of test cases based on Selenose. Months ago, we made a decision of running test cases with Jekins Cluster since we discovered that running test cases manually cost us too much time. And with Jenkins running on a single machine, it functioned slowlier and slowlier along with the increment of the number of test cases, due to its function mechanism, such as serialization, synchronization and blocking. In order to perform our test cases automatically and efficiently, we built up Jenkins cluster including one master and two slaves to run our projects and test cases concurrently, isolatedly and distributedly. 
 
 ### What is Jenkins and Jenkins Cluster?
 
-Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson, it provides continuous integration services for software development and helps developers to build, test and deploy their projects.It is a server-based system running in a servlet container such as Apache Tomcat. It supports SCM tools including CVS, Subversion, Git, Mercurial, Perforce, Clearcase and RTC, and can execute Apache Ant and Apache Maven based projects as well as arbitrary shell scripts and Windows batch commands. Jenkins is released under the MIT License and is a free software. (refer to [http://en.wikipedia.org/wiki/Jenkins_(software)](http://en.wikipedia.org/wiki/Jenkins_(software))
+Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson, it provides continuous integration services for software development and helps developers to build, test and deploy their projects. It is a server-based system running in a servlet container such as Apache Tomcat. It supports SCM tools including CVS, Subversion, Git, Mercurial, Perforce, Clearcase and RTC, and can execute Apache Ant and Apache Maven based projects as well as arbitrary shell scripts and Windows batch commands. Jenkins is released under the MIT License and is a free software. (refer to [http://en.wikipedia.org/wiki/Jenkins_(software)](http://en.wikipedia.org/wiki/Jenkins_(software))
 
-Jenkins Cluster is a cluster based on Jenkins, it consists of some instances which are individual machines or virtual machines, among these instances one should be selected as master and others should be slaves. Jenkins runs on the master, it manages projects and launches slave agents to build projects concurrently, separately via SSH, Java Web Start or exceuting customized commands.
+Jenkins Cluster is a set of instances which can be individual machines or virtual machines. Among those instances, one should be selected as master and the others should be slaves. Jenkins runs on the master, and manages projects and launches slave agents to build projects concurrently, isolatedly via SSH, Java Web Start or executing customized commands.
 
 ### Why is Jenkins needed?
 
-Jenkins provides continuous integration services which help developers to build, test and deploy their projects automatically and rapidly. Within Jenkins, developers just need to focus on development and Jenkins will help to do the other things.
+Jenkins provides continuous integration services which help developers to build, test and deploy their projects automatically and rapidly. Within Jenkins, developers just need to focus on development and let Jekins give services to the rest.
 
 ### Why is Jenkins Cluster needed?
 
-Overmany or Heavyweight projects on Jenkins will make the machine overloaded, then Jenkins Cluster can deal with that, it allows to distribute our projects onto different instances to run concurrently and separately with a higher performence. If one project is too heavy, we can also divide it into several light subprojects.
+Overmany and heavyweight projects running on Jenkins causes the machine overloaded, and Jenkins Cluster can overwhelm that. It provides functionality of distributing our project(s) onto different instances to run concurrently and isolatedly, therefore it speeds up the performence. 
 
-### Why Jenkins Cluter has a higher performance than Jenkins without hardware upgrade?
+### Why Jenkins Cluter has a higher performance than the one without hardware upgrade?
 
-Jenkins on single machine runs projects serially, synchronously and blocking. It means that one project is blocked, others can not be started still.
-While Jenkins Cluster runs projects distributedly, so that if we divide our machine into several virtual machines and build Jenkins Cluster based on these instances,
-we can have a more sufficient use of resources and a higher performance of projects.
+Jenkins on single machine runs projects serially, synchronously and with blocking. It means once a single project is blocked, the others can not be started.
+
+Thanks to the distribution feature of Jekins, we can divide our machine into several virtual ones where instances of Jenkins Cluster work on, with the achievement of more sufficient usage of resources and higher performance of projects.
 
 ###Jenkins introduction 
 
@@ -30,30 +30,30 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 ## Hardware and Software Required
 
-- host machine (physics machine)
+- Host machine (physics machine)
 
-	- hardware
+	- Hardware
 
             Memory 8.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz x 2
             Disk 500GB
             OS type 64-bit
 
-	- software
+	- Software
 
             Ubuntu 11.10 or higher
             Oracle VM VirtualBox 4.1.2
 
-- virtual machine as master
+- Virtual machine as master
 
-	- hardware
+	- Hardware
 
             Memory 2.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz
             Disk 20GB
             OS type 64-bit
 
-	- software
+	- Software
 
             Ubuntu 11.10 or higher
             JDK 1.6
@@ -61,23 +61,23 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
             Jenkins ver. 1.509.2
             SSH Credentials Plugin (Jenkins Plugin) 0.4 
 
-- virtual machine as slave
+- Virtual machine as slave
 
-	- hardware
+	- Hardware
 
             Memory 1.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz
             Disk 20GB
             OS type 64-bit
 
-	- software
+	- Software
 
             Ubuntu 11.10 or higher
             SSHD 
 
 ##Jenkins Cluster Setup
 
-- Create Master
+- Create master
 
 	- NOTICE: refer to this article [http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html](http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html)
     
@@ -133,13 +133,13 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
     
 - Create slave VMS referring to the previous chapter Create Master
 
-- Clone Slave
+- Clone slave
 
 	- Clone VMS
 
-		-  Clone VDI VirtualBox Disk
+		-  Clone VDI virtualBox disk
 
-			- Clone Virtual Disk
+			- Clone virtual disk
                 
                 `$ VboxManage clonehd src.vdi dst.vdi`
                 
@@ -157,14 +157,14 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
             
 		- Bridged adapter
 
-		-  Edit configuration file for network
+		- Edit configuration file for network
         
             `sudo vim /etc/network/interfaces`
         
-            remove all the other lines just keep the lines below
+		- Remove all the other lines just keep the lines below
 
-                auto lo
-                iface lo inet loopback
+        	auto lo
+			iface lo inet loopback
 
 - Create Jenkins Cluster on virtual machines
 
@@ -211,7 +211,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 - Django
 
 	- This is a web project based on Django framework.
-	- dependency
+	- Dependency
 
             Selenose
             Python 2.7.2
@@ -238,11 +238,11 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
         
     ![](../assets/projects_list.png)
 
-- screenshots visiable 
+- Screenshots
     
     ![](../assets/jenkins_slaves.png)
 
-- test environment
+- Test environment
     
         Selenose
         Python 2.7.2
@@ -252,7 +252,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
         phpPgAdmin
         Apache 2.2.20
 
-- performence
+- Performence
 
 	- Run test cases distributedly
 
