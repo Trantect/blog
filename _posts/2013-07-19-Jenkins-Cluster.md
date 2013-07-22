@@ -46,14 +46,14 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - virtual machine as master
 
-    - hardware
+	- hardware
 
             Memory 2.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz
             Disk 20GB
             OS type 64-bit
 
-    - software
+	- software
 
             Ubuntu 11.10 or higher
             JDK 1.6
@@ -63,14 +63,14 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - virtual machine as slave
 
-    - hardware
+	- hardware
 
             Memory 1.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz
             Disk 20GB
             OS type 64-bit
 
-    - software
+	- software
 
             Ubuntu 11.10 or higher
             SSHD 
@@ -79,31 +79,31 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - Create Master
 
-    - NOTICE: refer to this article [http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html](http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html)
+	- NOTICE: refer to this article [http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html](http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html)
     
-    - Use Ubuntu 11.10 as example
+	- Use Ubuntu 11.10 as example
 
         `$ VM=Jenkins`
 
-    - Create a 20GB dynamic disk
+	- Create a 20GB dynamic disk
 
         `$ VBoxManage createhd --filename $VM.vdi --size 20480`
     
-    - List the OS types VirtualBox recognises
+	- List the OS types VirtualBox recognises
 
         `$ VBoxManage list ostypes`
 
-    - Copy the most appropriate one
+	- Copy the most appropriate one
 
         `$ VBoxManage createvm --name $VM --ostype "Ubuntu_64" --register`
 
-    - Add a SATA controller with the dynamic disk attached
+	- Add a SATA controller with the dynamic disk attached
 
         `$ VBoxManage storagectl $VM --name "SATA Controller" --add sata --controller IntelAHCI`
 
         `$ VBoxManage storageattach $VM --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium $VM.vdi`
 
-    - Add an IDE controller with a DVD driver attached, and the install ISO inserted into the driver
+	- Add an IDE controller with a DVD driver attached, and the install ISO inserted into the driver
 
         `$ VBoxManage storagectl $VM --name "IDE Controller" --add ide`
 
