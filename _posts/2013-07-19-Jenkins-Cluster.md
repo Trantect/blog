@@ -78,7 +78,8 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 
 ##Jenkins Cluster Setup 
 * Create Master 
-    * **NOTICE:** refer to this article http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html
+            
+    * NOTICE: refer to this article http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html
     
     * Use Ubuntu 11.10 as example
     
