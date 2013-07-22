@@ -9,6 +9,14 @@ layout: default
 
 ##Overview
 
+### What is Jenkins and Jenkins Cluster?
+
+### Why is Jenkins needed?
+
+### Why is Jenkins Cluster needed?
+
+### Why Jenkins Cluter has a higher performance than Jenkins without hardware upgrade?
+
 * hardware introduction
 
         Memory 2.0 GiB
