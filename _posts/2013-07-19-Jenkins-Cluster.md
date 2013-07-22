@@ -34,15 +34,15 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 
      * hardware
 
-          Memory 8.0 GiB
-          Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz x 2
-          Disk 500GB
-          OS type 64-bit
+            Memory 8.0 GiB
+            Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz x 2
+            Disk 500GB
+            OS type 64-bit
 
      * software
 
-          Ubuntu 11.10 or higher
-          Oracle VM VirtualBox 4.1.2
+            Ubuntu 11.10 or higher
+            Oracle VM VirtualBox 4.1.2
 
 * virtual machine as master
 
