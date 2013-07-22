@@ -10,7 +10,17 @@ layout: default
 ##Overview
 
 * hardware introduction
+
+        Memory 2.0 GiB
+        Processor Intel® Celeron(R) CPU G1610 @ 2.60GHz 
+        Disk 80GB
+    
 * software introduction
+
+        Ubuntu 11.10 or higher
+        Python 2.7.2
+        JDK 1.6
+
 * jenkins
 * system to be tested
 * android
