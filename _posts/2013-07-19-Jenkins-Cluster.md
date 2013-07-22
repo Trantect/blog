@@ -240,13 +240,15 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 * performence
     
     * Run test cases distributedly
+    
         * Project adfreeq takes 30 sec to checkout latest code and push the latest code, data, config onto all the slaves.
         * Project adfreeq_master takes 19 mins to run 12 test cases, 12 postgres flush, 63 asserts, 1 syncdb within 1244 lines.
         * Project adfreeq_slave_01 takes 23 mins to run 19 test cases, 19 postgres flush, 76 asserts, 1 syncdb within 739 lines.
         * Project adfreeq_slave02 takes 18 mins to run 11 test cases, 11 mongo flush, 84 asserts, 1 syncdb within 1096 lines.
         
     * Run all test cases on one single machine
-        It takes about more than one hour in tatal.
+    
+        * It takes about more than one hour in tatal.
 
 ##About Trantect
 
