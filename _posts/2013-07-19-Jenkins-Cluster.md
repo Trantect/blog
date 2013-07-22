@@ -9,6 +9,8 @@ layout: default
 
 ##Overview
 
+Now Trantect is working on a Django-based project with a lot of test cases based on Selenose. Weeks ago, we found that running these test cases manually cost us much time.To reduce this time cost and run our test cases automatically, we built a Jenkins to manage our projects and test cases.Firstly we ran all the projects and test cases on one single machine, but with the increment of test cases, the Jenkins became slower and slower due to its serialized, synchronous and blocking work.To improve the performance of Jenkins, we created a Jenkins cluster including one master and two slaves to run our projects and test cases concurrently. separately and distributedly.And the cluster performs well.
+
 ### What is Jenkins and Jenkins Cluster?
 
 Jenkins is an open source continuous integration tool written in Java. The project was forked from Hudson, it provides continuous integration services for software development and helps developers to build, test and deploy their projects.It is a server-based system running in a servlet container such as Apache Tomcat. It supports SCM tools including CVS, Subversion, Git, Mercurial, Perforce, Clearcase and RTC, and can execute Apache Ant and Apache Maven based projects as well as arbitrary shell scripts and Windows batch commands. Jenkins is released under the MIT License and is a free software. (refer to http://en.wikipedia.org/wiki/Jenkins_(software))
@@ -26,7 +28,7 @@ Overmany or Heavyweight projects on Jenkins will make the machine overloaded, th
 ### Why Jenkins Cluter has a higher performance than Jenkins without hardware upgrade?
 
 Jenkins on single machine runs projects serially, synchronously and blocking. It means that one project is blocked, others can not be started still.
-While Jenkins Cluster runs projects distributedly, so that if we divide our machine into several virtual machines and build Jenkins Cluster based on these instances,
+While Jenkins Cluster runs projects dly, so that if we divide our machine into several virtual machines and build Jenkins Cluster based on these instances,
 we can have a more sufficient use of resources and a higher performance of projects.
 
 ###Jenkins introduction 
