@@ -109,7 +109,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
         `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium  /path/to/ubuntu-11.10-desktop-amd64.iso`
 
-    - Misc system settings
+	- Misc system settings
     
         `$ VBoxManage modifyvm $VM --ioapic on`
 
@@ -119,15 +119,15 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
         
         `$ VBoxManage modifyvm $VM --nic1 bridged --bridgeadapter1 e1000g0`
 
-    - Boot up
+	- Boot up
 
         `$ VBoxManage --startvm $VM --type headless`
 
-    - After you configured OS, shutdown and eject the DVD
+	- After you configured OS, shutdown and eject the DVD
 
         `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium none`
 
-    - Set up hostname
+	- Set up hostname
 
         `$ sudo vim /etc/hostname` and change it to jenkins
     
@@ -135,84 +135,84 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - Clone Slave
 
-    - Clone VMS
+	- Clone VMS
 
-        -  Clone VDI VirtualBox Disk
+		-  Clone VDI VirtualBox Disk
 
-            - Clone Virtual Disk
+			- Clone Virtual Disk
                 
                 `$ VboxManage clonehd src.vdi dst.vdi`
                 
-            - Change uuid of VDI
+			- Change uuid of VDI
                 
                 `$ VBoxManage internalcommands sethduuid dst.vdi`
                 
-        -  Create a new virtual machine based on new dst.vdi
+		-  Create a new virtual machine based on new dst.vdi
         
-    - Configure network
+	- Configure network
 
-        - Change hostname
+		- Change hostname
             
             `$ sudo vim /etc/hostname` and change it to jenkinslave01
             
-        -  Bridged adapter
+		- Bridged adapter
 
-        -  Edit configuration file for network
+		-  Edit configuration file for network
         
             `sudo vim /etc/network/interfaces`
         
             remove all the other lines just keep the lines below
-            
-            ``` javascript
+
                 auto lo
                 iface lo inet loopback
-            ```
 
 - Create Jenkins Cluster on virtual machines
 
-    - Install Jenkins on master
+	- Install Jenkins on master
         
         `$ ssh jenkins@jenkins.local`
         
         `$ sudo apt-get install jenkins`
     
-    - Restart master
+	- Restart master
         
-    - Access Jenkins [http://jenkins.local/](http://jenkins.local/)
+	- Access Jenkins [http://jenkins.local/](http://jenkins.local/)
     
-    - Update Jenkins up to version 1.5 in panel Jenkins > Manage Jenkins
+	- Update Jenkins up to version 1.5 in panel Jenkins > Manage Jenkins
         
         If Automatical upgrade fails, just donwload and replace jenkins.war
         
-    - Install SSH Credentials Plugin version 0.4 in panel Jenkins > Manage Jenkins > Manage Plugins
+	- Install SSH Credentials Plugin version 0.4 in panel Jenkins > Manage Jenkins > Manage Plugins
 
-    - Add SSH authorization from master to slaves
+	- Add SSH authorization from master to slaves
         
         refer to [http://rcsg-gsir.imsb-dsgi.nrc-cnrc.gc.ca/documents/internet/node31.html](http://rcsg-gsir.imsb-dsgi.nrc-cnrc.gc.ca/documents/internet/node31.html)
         
-    - Add credentials in Jenkins > Manage Jenkins > Manage Credentials
+	- Add credentials in Jenkins > Manage Jenkins > Manage Credentials
 
         ![](../assets/add_credentials.png)
         
-    - Add slave node in jenkins
+	- Add slave node in jenkins
     
-        - access panel Jenkins > Manage Jenkins > Manage Nodes
+		- access panel Jenkins > Manage Jenkins > Manage Nodes
     
-        - click the New Node link on the left column
+		- click the New Node link on the left column
 
-        - select Dumb Slave and input the slave node name for example 'slave01'
+		- select Dumb Slave and input the slave node name for example 'slave01'
 
-        - add slave node 'slave01' like 
+		- add slave node 'slave01' like 
 
         ![](../assets/add_node_slave01.png)
 
-        - add slave node 'slave02' in the same way
+		- add slave node 'slave02' in the same way
 
 ## Projects to be tested
+
 - Django
-    - This is a web project based on Django framework.
-    - dependency
-       
+
+	- This is a web project based on Django framework.
+	- dependency
+
             Selenose
             Python 2.7.2
             Django 1.5
@@ -225,15 +225,16 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 - SCM
 
 ##Real case study
+
 - Create projects on Jenkins Cluster
 
-    - Project adfreeq will be triggered when code is updated on Github. It runs on master to push the latest code, data and config onto slaves and then triggers adfreeq_master, adfreeq_slave_01 and adfreeq_slave_02 as downstream projects.
+	- Project adfreeq will be triggered when code is updated on Github. It runs on master to push the latest code, data and config onto slaves and then triggers adfreeq_master, adfreeq_slave_01 and adfreeq_slave_02 as downstream projects.
 
-    - Project adfreeq_master runs some test cases on master after project adfreeq is done.
+	- Project adfreeq_master runs some test cases on master after project adfreeq is done.
 
-    - Project adfreeq_slave_01 runs some other test cases on slave01 after project adfreeq is done.
+	- Project adfreeq_slave_01 runs some other test cases on slave01 after project adfreeq is done.
 
-    - Project adfreeq_slave_02 runs the left test cases on slave02 after project adfreeq is done.
+	- Project adfreeq_slave_02 runs the left test cases on slave02 after project adfreeq is done.
         
     ![](../assets/projects_list.png)
 
@@ -253,16 +254,16 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - performence
 
-    - Run test cases distributedly
+	- Run test cases distributedly
 
-        - Project adfreeq takes 30 sec to checkout latest code and push the latest code, data, config onto all the slaves.
+		- Project adfreeq takes 30 sec to checkout latest code and push the latest code, data, config onto all the slaves.
 
-        - Project adfreeq_master takes 19 mins to run 12 test cases, 12 postgres flush, 63 asserts, 1 syncdb within 1244 lines.
+		- Project adfreeq_master takes 19 mins to run 12 test cases, 12 postgres flush, 63 asserts, 1 syncdb within 1244 lines.
 
-        - Project adfreeq_slave_01 takes 23 mins to run 19 test cases, 19 postgres flush, 76 asserts, 1 syncdb within 739 lines.
+		- Project adfreeq_slave_01 takes 23 mins to run 19 test cases, 19 postgres flush, 76 asserts, 1 syncdb within 739 lines.
 
-        - Project adfreeq_slave02 takes 18 mins to run 11 test cases, 11 mongo flush, 84 asserts, 1 syncdb within 1096 lines.
+		- Project adfreeq_slave02 takes 18 mins to run 11 test cases, 11 mongo flush, 84 asserts, 1 syncdb within 1096 lines.
 
-    - Run all test cases on one single machine
+	- Run all test cases on one single machine
 
-        - It takes about more than one hour in tatal.
+		- It takes about more than one hour in tatal.
