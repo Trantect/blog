@@ -184,7 +184,14 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     * Install SSH Credentials Plugin version 0.4 in panel Jenkins > Manage Jenkins > Manage Plugins
     * Add SSH authorization from master to slaves
         
+        refer to http://rcsg-gsir.imsb-dsgi.nrc-cnrc.gc.ca/documents/internet/node31.html
+        
     * Add new node on jenkins
+        * access panel Jenkins > Manage Jenkins > Manage Nodes
+        * click the New Node link on the left
+        * select Dumb Slave and input the slave name for example 'slave01'
+        * select 'launch slave agents on Unix machines via SSH'
+        * 
     * Create projects on master or slaves
 * Assign test tasks
     * Check out code and distribute to slaves
