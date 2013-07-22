@@ -60,6 +60,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         
             Ubuntu 11.10 or higher
             JDK 1.6
+            Apache 2.2.20
             Jenkins ver. 1.509.2
             SSH Credentials Plugin (Jenkins Plugin) 0.4 
 
@@ -126,23 +127,25 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     * After you configured OS, shutdown and eject the DVD
     
         `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium none`
+        
+    * Install Jenkins
+    
 * Create SLave
+    
+    refer to previous chapter **Create Master**
+
 * Clone SLave
     * Clone VMS
-        *  Create a new partition
-            *  lvm tool
-        *  Convert and copy a file
-            *  dd if=input file of=<output file> bs=10M
-        *  Clone VMDK Virtual Machine
-            * Clone new vmdk
-            * cp src.vmdk dst.vmdk
-            * Change uuid of vmdk
         *  Clone VDI VirtualBox Disk
             * Clone new vdi 
-            * VboxManage clonehd src.vdi dst.vdi
+                
+                `$ VboxManage clonehd src.vdi dst.vdi`
+                
             * Change uuid of vdi
+                
+                `$ VBoxManage internalcommands sethduuid dst.vdi`
+                
         *  Create a new virtual machine based on new dst.vmdk and dst.vdi
-        *  
 * Configure network
     *  Bridged adapter
     *  Edit configuration file for network /etc/network/interfaces
@@ -167,6 +170,8 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
             Django 1.5
             PostgreSQL 9.1.9
             MongoDB 2.0.4
+            phpPgAdmin
+            Apache 2.2.20
 
 * Android
 * SCM
