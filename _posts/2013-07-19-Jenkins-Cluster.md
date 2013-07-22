@@ -16,8 +16,6 @@ layout: default
 * android
 * django
 
-
-
 ##Jenkins introduction (provide an office link)
 
 ##Set up Jenkins Cluster
