@@ -203,6 +203,9 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         * add slave node 'slave02' in the same way
         
     * Create projects on master or slaves
+        
+    ![](../assets/projects_list.png)
+
 * Assign test tasks
     * Check out code and distribute to slaves
     * Trigger
