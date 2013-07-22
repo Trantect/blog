@@ -132,6 +132,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     Create slave VMS referring to the previous chapter **Create Master**
 
 * Clone Slave
+        
     * Clone VMS
         *  Clone VDI VirtualBox Disk
             * Clone Virtual Disk
