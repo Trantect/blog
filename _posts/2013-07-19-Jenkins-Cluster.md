@@ -127,9 +127,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     
         `$ sudo vim /etc/hostname` and change it to **jenkins**
     
-* Create Slave
-    
-    Create slave VMS referring to the previous chapter **Create Master**
+* Create slave VMS referring to the previous chapter **Create Master**
 
 * Clone Slave
 
