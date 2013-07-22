@@ -85,7 +85,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     * Use Ubuntu 11.10 as example
     
         `$ VM=Jenkins`
-
+        
     * Create a 20GB dynamic disk
     
         `$ VBoxManage createhd --filename $VM.vdi --size 20480`
@@ -97,7 +97,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     * Copy the most appropriate one
     
         `$ VBoxManage createvm --name $VM --ostype "Ubuntu_64" --register`
-
+        
     * Add a SATA controller with the dynamic disk attached
     
         `$ VBoxManage storagectl $VM --name "SATA Controller" --add sata --controller IntelAHCI`
@@ -128,32 +128,62 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     
         `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium none`
         
-    * Install Jenkins
+    * Set up hostname
+    
+        `$ sudo vim /etc/hostname` and change it to '**jenkins**'
     
 * Create SLave
     
-    refer to previous chapter **Create Master**
+    Create slave VMS referring to the previous chapter **Create Master**
 
 * Clone SLave
     * Clone VMS
         *  Clone VDI VirtualBox Disk
-            * Clone new vdi 
+            * Clone Virtual Disk
                 
                 `$ VboxManage clonehd src.vdi dst.vdi`
                 
-            * Change uuid of vdi
+            * Change uuid of VDI
                 
                 `$ VBoxManage internalcommands sethduuid dst.vdi`
                 
-        *  Create a new virtual machine based on new dst.vmdk and dst.vdi
-* Configure network
-    *  Bridged adapter
-    *  Edit configuration file for network /etc/network/interfaces
-* Upgrade Jenkins to 1.5
-    *  Automatical upgrade always fali so  donwload and replace jenkins.war
-* Install SSH Credentials Plugin (version 0.4)
+        *  Create a new virtual machine based on new dst.vdi
+
+    * Configure network
+        * Change hostname
+            
+            `$ sudo vim /etc/hostname` and change it to '**jenkinslave01**'
+            
+        *  Bridged adapter
+        *  Edit configuration file for network
+        
+            `sudo vim /etc/network/interfaces`
+
+            remove all the other lines just keep the lines below
+            ``` javascript
+                auto lo
+                iface lo inet loopback
+            ```
+
 * Build Cluster
+        
+    * Install Jenkins on master
+        
+        `$ ssh jenkins@jenkins.local`
+        
+        `$ sudo apt-get install jenkins`
+    
+    * Restart master
+        
+    * Access Jenkins http://jenkins.local/
+    
+    * Update Jenkins up to version 1.5 in panel Jenkins > Manage Jenkins
+        
+        If Automatical upgrade fails, just donwload and replace **jenkins.war**
+        
+    * Install SSH Credentials Plugin version 0.4 in panel Jenkins > Manage Jenkins > Manage Plugins
     * Add SSH authorization from master to slaves
+        
     * Add new node on jenkins
     * Create projects on master or slaves
 * Assign test tasks
