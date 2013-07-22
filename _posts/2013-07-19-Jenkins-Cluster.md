@@ -2,7 +2,7 @@
 
 ##Overview
 
-At present Trantect is working on a Django-based project with a lot of test cases based on Selenose. Weeks ago, we found that running these test cases manually cost us too much time.To reduce this time cost and run our test cases automatically, we built a Jenkins to manage our projects and test cases.Firstly we ran all the projects and test cases on one single machine, but with the increment of test cases, the Jenkins became slower and slower due to its serialized, synchronous and blocking work.Then, to improve the performance of Jenkins, we created a Jenkins cluster including one master and two slaves to run our projects and test cases concurrently. separately and distributedly.And the cluster performs well.
+At present Trantect is working on a Django-based project with a lot of test cases based on Selenose. Weeks ago, we found that running these test cases manually cost us too much time. In order to run our test cases automatically and efficiently, we built Jenkins to manage our projects including test cases. Firstly we ran all of them on one single machine, but with the increment of test cases, Jenkins became slower and slower due to its serialization, synchronization and blocking. Then, to improve the performance of Jenkins, we created a Jenkins cluster including one master and two slaves to run our projects and test cases concurrently. separately and distributedly.And the cluster performs well.
 
 ### What is Jenkins and Jenkins Cluster?
 
