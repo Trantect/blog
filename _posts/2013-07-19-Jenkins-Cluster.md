@@ -46,14 +46,14 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - virtual machine as master
 
-    * hardware
+    - hardware
 
             Memory 2.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz
             Disk 20GB
             OS type 64-bit
 
-    * software
+    - software
 
             Ubuntu 11.10 or higher
             JDK 1.6
@@ -63,14 +63,14 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - virtual machine as slave
 
-    * hardware
+    - hardware
 
             Memory 1.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz
             Disk 20GB
             OS type 64-bit
 
-    * software
+    - software
 
             Ubuntu 11.10 or higher
             SSHD 
