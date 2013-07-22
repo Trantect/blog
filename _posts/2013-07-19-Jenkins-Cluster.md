@@ -21,9 +21,11 @@ Jenkins provides continuous integration services which help developers to build,
 
 ### Why is Jenkins Cluster needed?
 
-Jenkins Cluster allows different projects running on different instances so that we can divide our projects into several subprojects to run concurrently and separately with a higher performence.
+Overmany or Heavyweight projects on Jenkins will make the machine overloaded, then Jenkins Cluster can deal with that, it allows to distribute our projects onto different instances to run concurrently and separately with a higher performence. If one project is too heavy, we can also divide it into several light subprojects.
 
 ### Why Jenkins Cluter has a higher performance than Jenkins without hardware upgrade?
+
+
 
 * hardware introduction
 
