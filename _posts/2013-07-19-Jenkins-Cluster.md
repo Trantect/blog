@@ -162,6 +162,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
             `sudo vim /etc/network/interfaces`
         
             remove all the other lines just keep the lines below
+            
             ``` javascript
                 auto lo
                 iface lo inet loopback
