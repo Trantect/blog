@@ -31,6 +31,9 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 ## Hardware and Software Required
 
 * host machine (physics machine)
+- hardware
+- software
+
 
 	* hardware
 
