@@ -79,6 +79,21 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 
 ##Jenkins Cluster Setup 
 * Create Master
+    * Use Ubuntu 11.10 as example
+    
+        `$ VM=Jenkins`
+
+    * Create a 20GB "dynamic" disk
+    
+        `$ VBoxManage createhd --filename $VM.vdi --size 20480`
+    
+    * List the OS types VirtualBox recognises
+    
+        `$ VBoxManage list ostypes`
+    
+    * Copy the most appropriate one
+    
+        `$ VBoxManage createvm --name $VM --ostype "Ubuntu_64" --register`
 * Create SLave
 * Clone SLave
     * Clone VMS
