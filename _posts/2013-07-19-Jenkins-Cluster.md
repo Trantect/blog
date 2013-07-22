@@ -192,13 +192,16 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         
         ![](../assets/add_credentials.png)
         
-    * Add new node in jenkins
+    * Add slave node in jenkins
         * access panel Jenkins > Manage Jenkins > Manage Nodes
-        * click the New Node link on the left
-        * select Dumb Slave and input the slave name for example 'slave01'
-        * add new node
+        * click the New Node link on the left column
+        * select Dumb Slave and input the slave node name for example 'slave01'
+        * add slave node 'slave01' like 
         
         ![](../assets/add_node_slave01.png)
+        
+        * add slave node 'slave02' in the same way
+        
     * Create projects on master or slaves
 * Assign test tasks
     * Check out code and distribute to slaves
