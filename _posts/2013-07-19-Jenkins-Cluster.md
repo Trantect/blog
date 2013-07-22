@@ -25,7 +25,9 @@ Overmany or Heavyweight projects on Jenkins will make the machine overloaded, th
 
 ### Why Jenkins Cluter has a higher performance than Jenkins without hardware upgrade?
 
-
+Jenkins on single machine runs projects serially, synchronously and blocking. It means that one project is blocked, others can not be started still.
+While Jenkins Cluster runs projects distributedly, so that if we divide our machine into several virtual machines and build Jenkins Cluster based on these instances,
+we can have a more sufficient use of resources and a higher performance of projects.
 
 * hardware introduction
 
