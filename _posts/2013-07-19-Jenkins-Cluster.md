@@ -44,6 +44,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
             Oracle VM VirtualBox 4.1.2
 
 * **virtual** machine as **master**
+      
     * hardware
         
             Memory 2.0 GiB
