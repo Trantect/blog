@@ -31,7 +31,8 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 ## Hardware and Software Required
 
 * **host** machine (physics machine)
-    * hardware
+      
+    * dhardware
     
             Memory 8.0 GiB
             Processor Intel® Celeron(R) CPU G1610 @ 2.60GHz x 2
