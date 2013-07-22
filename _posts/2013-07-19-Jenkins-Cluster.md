@@ -31,30 +31,30 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 ## Hardware and Software Required
 
 * host machine (physics machine)
-      
-    * hardware
-    
+
+      * hardware
+
             Memory 8.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz x 2
             Disk 500GB
             OS type 64-bit
-            
-    * software
-            
+
+      * software
+
             Ubuntu 11.10 or higher
             Oracle VM VirtualBox 4.1.2
 
 * virtual machine as master
-      
-    * hardware
-        
+
+      * hardware
+
             Memory 2.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz
             Disk 20GB
             OS type 64-bit
-        
+
     * software
-        
+
             Ubuntu 11.10 or higher
             JDK 1.6
             Apache 2.2.20
@@ -62,54 +62,54 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
             SSH Credentials Plugin (Jenkins Plugin) 0.4 
 
 * virtual machine as slave
-      
-    * hardware
-        
+
+      * hardware
+
             Memory 1.0 GiB
             Processor IntelÂ® Celeron(R) CPU G1610 @ 2.60GHz
             Disk 20GB
             OS type 64-bit
-        
-    * software
-        
-            Ubuntu 11.10 or higher
-            SSHD
-        
 
-##Jenkins Cluster Setup 
+      * software
+
+            Ubuntu 11.10 or higher
+            SSHD 
+
+##Jenkins Cluster Setup
+
 * Create Master 
-            
-    * NOTICE: refer to this article http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html
+      
+      * NOTICE: refer to this article http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html
     
-    * Use Ubuntu 11.10 as example
+      * Use Ubuntu 11.10 as example
+
+            `$ VM=Jenkins`
+
+      * Create a 20GB dynamic disk
+
+            `$ VBoxManage createhd --filename $VM.vdi --size 20480`
     
-        `$ VM=Jenkins`
-        
-    * Create a 20GB dynamic disk
-    
-        `$ VBoxManage createhd --filename $VM.vdi --size 20480`
-    
-    * List the OS types VirtualBox recognises
-    
-        `$ VBoxManage list ostypes`
-    
-    * Copy the most appropriate one
-    
-        `$ VBoxManage createvm --name $VM --ostype "Ubuntu_64" --register`
-        
-    * Add a SATA controller with the dynamic disk attached
-    
-        `$ VBoxManage storagectl $VM --name "SATA Controller" --add sata --controller IntelAHCI`
-        
-        `$ VBoxManage storageattach $VM --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium $VM.vdi`
-        
-    * Add an IDE controller with a DVD driver attached, and the install ISO inserted into the driver
-    
-        `$ VBoxManage storagectl $VM --name "IDE Controller" --add ide`
-        
-        `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium  /path/to/ubuntu-11.10-desktop-amd64.iso`
-        
-    * Misc system settings
+      * List the OS types VirtualBox recognises
+
+            `$ VBoxManage list ostypes`
+
+      * Copy the most appropriate one
+
+            `$ VBoxManage createvm --name $VM --ostype "Ubuntu_64" --register`
+
+      * Add a SATA controller with the dynamic disk attached
+
+            `$ VBoxManage storagectl $VM --name "SATA Controller" --add sata --controller IntelAHCI`
+
+            `$ VBoxManage storageattach $VM --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium $VM.vdi`
+
+      * Add an IDE controller with a DVD driver attached, and the install ISO inserted into the driver
+
+            `$ VBoxManage storagectl $VM --name "IDE Controller" --add ide`
+
+            `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium  /path/to/ubuntu-11.10-desktop-amd64.iso`
+
+      * Misc system settings
     
         `$ VBoxManage modifyvm $VM --ioapic on`
         
@@ -118,18 +118,18 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         `$ VBoxManage modifyvm $VM --memory 2048 --vram 128`
         
         `$ VBoxManage modifyvm $VM --nic1 bridged --bridgeadapter1 e1000g0`
-    
-    * Boot up
-    
-        `$ VBoxManage --startvm $VM --type headless`
-    
-    * After you configured OS, shutdown and eject the DVD
-    
-        `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium none`
+
+      * Boot up
+
+            `$ VBoxManage --startvm $VM --type headless`
+
+      * After you configured OS, shutdown and eject the DVD
+
+            `$ VBoxManage storageattach $VM --storagectl "IDE Controller" --port 0 --device 0 --type dvddrive --medium none`
         
-    * Set up hostname
-    
-        `$ sudo vim /etc/hostname` and change it to jenkins
+      * Set up hostname
+
+            `$ sudo vim /etc/hostname` and change it to jenkins
     
 * Create slave VMS referring to the previous chapter Create Master
 
