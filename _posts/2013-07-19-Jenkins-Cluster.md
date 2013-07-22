@@ -76,12 +76,6 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
             Ubuntu 11.10 or higher
             SSHD
         
-* projects to be tested
-    * Django
-        
-        This is a web project based on Django framework (version Django 1.5, Python 2.72).
-
-    * Android
 
 ##Set up Jenkins Cluster
 * Clone VMS
@@ -111,6 +105,20 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 * Assign test tasks
     * Check out code and distribute to slaves
     * Trigger
+
+## Projects to be tested
+* Django
+    * This is a web project based on Django framework.
+    * dependency
+    
+            Selenose
+            Python 2.7.2
+            Django 1.5
+            PostgreSQL 9.1.9
+            MongoDB 2.0.4
+
+* Android
+* SCM
 
 ##Real case study
 * screenshots visiable 
