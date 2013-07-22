@@ -132,7 +132,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         
     * Set up hostname
     
-        `$ sudo vim /etc/hostname` and change it to '**jenkins**'
+        `$ sudo vim /etc/hostname` and change it to **jenkins**
     
 * Create SLave
     
@@ -154,7 +154,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     * Configure network
         * Change hostname
             
-            `$ sudo vim /etc/hostname` and change it to '**jenkinslave01**'
+            `$ sudo vim /etc/hostname` and change it to **jenkinslave01**
             
         *  Bridged adapter
         *  Edit configuration file for network
