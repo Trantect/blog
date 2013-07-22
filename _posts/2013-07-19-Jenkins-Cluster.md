@@ -1,4 +1,4 @@
-![Jenkins Cluster](https://wiki.jenkins-ci.org/download/attachments/2916393/logo-title.png?version=1&modificationDate=1302753947000)
+![Jenkins Cluster](../asserts/jenkins_logo.png)
 
 ##Overview
 
