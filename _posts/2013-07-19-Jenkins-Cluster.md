@@ -163,7 +163,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
         
 		- Remove all the other lines just keep the lines below
 
-        	auto lo
+			auto lo
 			iface lo inet loopback
 
 - Create Jenkins Cluster on virtual machines
