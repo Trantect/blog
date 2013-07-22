@@ -35,19 +35,46 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 
 ## Hardware and Software Required
 
-* hardware introduction
-
-        Memory 2.0 GiB
-        Processor Intel® Celeron(R) CPU G1610 @ 2.60GHz 
-        Disk 80GB
+* **host** machine (physics machine)
+    * hardware
     
-* software introduction
+            Memory 8.0 GiB
+            Processor Intel® Celeron(R) CPU G1610 @ 2.60GHz x 2
+            Disk 500GB
+            OS type 64-bit
+            
+    * software
+            
+            Ubuntu 11.10 or higher
+            Oracle VM VirtualBox 4.1.2
 
-        Ubuntu 11.10 or higher
-        Python 2.7.2
-        JDK 1.6
-        Jenkins ver. 1.509.2
-        phpPgAdmin
+* **virtual** machine as **master**
+    * hardware
+        
+            Memory 2.0 GiB
+            Processor Intel® Celeron(R) CPU G1610 @ 2.60GHz
+            Disk 20GB
+            OS type 64-bit
+        
+    * software
+        
+            Ubuntu 11.10 or higher
+            JDK 1.6
+            Jenkins ver. 1.509.2
+            SSH Credentials Plugin (Jenkins Plugin) 0.4 
+
+* **virtual** machine as **slave**
+    * hardware
+        
+            Memory 1.0 GiB
+            Processor Intel® Celeron(R) CPU G1610 @ 2.60GHz
+            Disk 20GB
+            OS type 64-bit
+        
+    * software
+        
+            Ubuntu 11.10 or higher
+            SSHD
         
 * projects to be tested
     * Django
