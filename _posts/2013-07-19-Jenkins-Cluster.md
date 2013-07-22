@@ -188,6 +188,10 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         
         refer to http://rcsg-gsir.imsb-dsgi.nrc-cnrc.gc.ca/documents/internet/node31.html
         
+    * Add credentials in Jenkins > Manage Jenkins > Manage Credentials
+        
+        ![](../assets/add_credentials.png)
+        
     * Add new node in jenkins
         * access panel Jenkins > Manage Jenkins > Manage Nodes
         * click the New Node link on the left
