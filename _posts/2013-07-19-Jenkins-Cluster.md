@@ -33,6 +33,8 @@ we can have a more sufficient use of resources and a higher performance of proje
 
 Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 
+## Hardware and Software Required
+
 * hardware introduction
 
         Memory 2.0 GiB
