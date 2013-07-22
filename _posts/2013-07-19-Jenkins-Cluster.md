@@ -190,7 +190,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
         
 	- Add credentials in Jenkins > Manage Jenkins > Manage Credentials
 
-        ![](../assets/add_credentials.png)
+	![](../assets/add_credentials.png)
         
 	- Add slave node in jenkins
     
