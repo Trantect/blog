@@ -30,9 +30,9 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 
 ## Hardware and Software Required
 
-* **host** machine (physics machine)
+* host machine (physics machine)
       
-    * dhardware
+    * hardware
     
             Memory 8.0 GiB
             Processor Intel® Celeron(R) CPU G1610 @ 2.60GHz x 2
@@ -44,7 +44,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
             Ubuntu 11.10 or higher
             Oracle VM VirtualBox 4.1.2
 
-* **virtual** machine as **master**
+* virtual machine as master
       
     * hardware
         
@@ -61,7 +61,8 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
             Jenkins ver. 1.509.2
             SSH Credentials Plugin (Jenkins Plugin) 0.4 
 
-* **virtual** machine as **slave**
+* virtual machine as slave
+      
     * hardware
         
             Memory 1.0 GiB
@@ -127,9 +128,9 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         
     * Set up hostname
     
-        `$ sudo vim /etc/hostname` and change it to **jenkins**
+        `$ sudo vim /etc/hostname` and change it to jenkins
     
-* Create slave VMS referring to the previous chapter **Create Master**
+* Create slave VMS referring to the previous chapter Create Master
 
 * Clone Slave
 
@@ -151,7 +152,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 
         * Change hostname
             
-            `$ sudo vim /etc/hostname` and change it to **jenkinslave01**
+            `$ sudo vim /etc/hostname` and change it to jenkinslave01
             
         *  Bridged adapter
 
@@ -179,7 +180,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     
     * Update Jenkins up to version 1.5 in panel Jenkins > Manage Jenkins
         
-        If Automatical upgrade fails, just donwload and replace **jenkins.war**
+        If Automatical upgrade fails, just donwload and replace jenkins.war
         
     * Install SSH Credentials Plugin version 0.4 in panel Jenkins > Manage Jenkins > Manage Plugins
     * Add SSH authorization from master to slaves
