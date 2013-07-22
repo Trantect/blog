@@ -188,11 +188,13 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         
         refer to http://rcsg-gsir.imsb-dsgi.nrc-cnrc.gc.ca/documents/internet/node31.html
         
-    * Add new node on jenkins
+    * Add new node in jenkins
         * access panel Jenkins > Manage Jenkins > Manage Nodes
         * click the New Node link on the left
         * select Dumb Slave and input the slave name for example 'slave01'
-        * ![](../assets/add_node_slave01.png)
+        * add new node
+        
+        ![](../assets/add_node_slave01.png)
     * Create projects on master or slaves
 * Assign test tasks
     * Check out code and distribute to slaves
