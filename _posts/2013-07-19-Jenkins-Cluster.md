@@ -39,7 +39,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
             Disk 500GB
             OS type 64-bit
 
-     * software
+	* software
 
             Ubuntu 11.10 or higher
             Oracle VM VirtualBox 4.1.2
