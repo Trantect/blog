@@ -20,11 +20,15 @@ layout: default
         Ubuntu 11.10 or higher
         Python 2.7.2
         JDK 1.6
+        Jenkins ver. 1.509.2
+        phpPgAdmin
+        
+* projects to be tested
+    * Django
+        
+        This is a web project based on Django framework (version Django 1.5, Python 2.72).
 
-* jenkins
-* system to be tested
-* android
-* django
+    * Android
 
 ##Jenkins introduction (provide an office link)
 
