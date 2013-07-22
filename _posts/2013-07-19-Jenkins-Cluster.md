@@ -29,6 +29,10 @@ Jenkins on single machine runs projects serially, synchronously and blocking. It
 While Jenkins Cluster runs projects distributedly, so that if we divide our machine into several virtual machines and build Jenkins Cluster based on these instances,
 we can have a more sufficient use of resources and a higher performance of projects.
 
+###Jenkins introduction 
+
+Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
+
 * hardware introduction
 
         Memory 2.0 GiB
@@ -49,8 +53,6 @@ we can have a more sufficient use of resources and a higher performance of proje
         This is a web project based on Django framework (version Django 1.5, Python 2.72).
 
     * Android
-
-##Jenkins introduction (provide an office link)
 
 ##Set up Jenkins Cluster
 * Clone VMS
