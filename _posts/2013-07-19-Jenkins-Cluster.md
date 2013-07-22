@@ -192,8 +192,7 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         * access panel Jenkins > Manage Jenkins > Manage Nodes
         * click the New Node link on the left
         * select Dumb Slave and input the slave name for example 'slave01'
-        * select 'launch slave agents on Unix machines via SSH'
-        * 
+        * ![](../assets/add_node_slave01.png)
     * Create projects on master or slaves
 * Assign test tasks
     * Check out code and distribute to slaves
