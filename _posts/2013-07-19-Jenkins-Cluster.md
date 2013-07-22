@@ -1,11 +1,4 @@
----
-published: true
-layout: default
----
-
 ![Jenkins Cluster](https://wiki.jenkins-ci.org/download/attachments/2916393/logo-title.png?version=1&modificationDate=1302753947000)
-
-#This is just a outline for this blog. To be continued...
 
 ##Overview
 
@@ -134,13 +127,14 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
     
         `$ sudo vim /etc/hostname` and change it to **jenkins**
     
-* Create Slave
-    
-    Create slave VMS referring to the previous chapter **Create Master**
+* Create slave VMS referring to the previous chapter **Create Master**
 
 * Clone Slave
+
     * Clone VMS
+
         *  Clone VDI VirtualBox Disk
+
             * Clone Virtual Disk
                 
                 `$ VboxManage clonehd src.vdi dst.vdi`
@@ -152,11 +146,13 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
         *  Create a new virtual machine based on new dst.vdi
         
     * Configure network
+
         * Change hostname
             
             `$ sudo vim /etc/hostname` and change it to **jenkinslave01**
             
         *  Bridged adapter
+
         *  Edit configuration file for network
         
             `sudo vim /etc/network/interfaces`
@@ -220,15 +216,17 @@ Please refer to https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins
 
 ##Real case study
 * Create projects on Jenkins Cluster
-    * Create projects on master or slaves
-        * Project adfreeq will be triggered when code is updated on Github. It runs on master to push the latest code, data and config onto slaves and then triggers adfreeq_master, adfreeq_slave_01 and adfreeq_slave_02 as downstream projects.
-        * Project adfreeq_master runs some test cases on master after project adfreeq is done.
-        * Project adfreeq_slave_01 runs some other test cases on slave01 after project adfreeq is done.
-        * Project adfreeq_slave_02 runs the left test cases on slave02 after project adfreeq is done.
+    * Project adfreeq will be triggered when code is updated on Github. It runs on master to push the latest code, data and config onto slaves and then triggers adfreeq_master, adfreeq_slave_01 and adfreeq_slave_02 as downstream projects.
+    * Project adfreeq_master runs some test cases on master after project adfreeq is done.
+    * Project adfreeq_slave_01 runs some other test cases on slave01 after project adfreeq is done.
+    * Project adfreeq_slave_02 runs the left test cases on slave02 after project adfreeq is done.
         
     ![](../assets/projects_list.png)
 
 * screenshots visiable 
+    
+    ![](../assets/jenkins_slaves.png)
+
 * test environment
     
         Selenose
