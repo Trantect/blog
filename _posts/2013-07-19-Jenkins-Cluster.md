@@ -79,7 +79,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - Create Master
 
-    - NOTICE: refer to this article http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html
+    - NOTICE: refer to this article [http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html](http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html)
     
     - Use Ubuntu 11.10 as example
 
@@ -177,7 +177,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
     
     - Restart master
         
-    - Access Jenkins http://jenkins.local/
+    - Access Jenkins [http://jenkins.local/](http://jenkins.local/)
     
     - Update Jenkins up to version 1.5 in panel Jenkins > Manage Jenkins
         
@@ -187,7 +187,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
     - Add SSH authorization from master to slaves
         
-        refer to http://rcsg-gsir.imsb-dsgi.nrc-cnrc.gc.ca/documents/internet/node31.html
+        refer to [http://rcsg-gsir.imsb-dsgi.nrc-cnrc.gc.ca/documents/internet/node31.html](http://rcsg-gsir.imsb-dsgi.nrc-cnrc.gc.ca/documents/internet/node31.html)
         
     - Add credentials in Jenkins > Manage Jenkins > Manage Credentials
 
