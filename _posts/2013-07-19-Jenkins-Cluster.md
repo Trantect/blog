@@ -254,6 +254,15 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - Performence
 
+	- Performence diff
+	--------------------------------------------------
+	| No | Sadly        | There is none              |
+	--------------------------------------------------
+	| Except this, which is a poor alternative       |
+	--------------------------------------------------
+	| There really      | should be one              |
+	--------------------------------------------------
+
 	- Run test cases distributedly
 
 		- Project Prj takes 30 sec to checkout latest code and push the latest code, data, config onto all the slaves.
