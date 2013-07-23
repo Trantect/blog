@@ -257,7 +257,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 	- Performence diff
 
 	|  Project       | cost   | cases | assert | lines | DB flush | DB sync|
-	|----------------|:------:|:-----:|:------:|:-----:|:--------:|-------:|
+	|:---------------|:-------|:------|:-------|:------|:---------|:-------|
 	| Prj            | 30 sec | 0     | 0      | 0     | 0        | 0      |
 	| Prj_master     | 19 min | 12    | 63     | 1244  | 12       | 1      |
     | Prj_slave_01   | 23 min | 19    | 76     | 739   | 19       | 1      |
