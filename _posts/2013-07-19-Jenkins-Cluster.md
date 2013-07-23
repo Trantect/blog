@@ -179,9 +179,9 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 	- Access Jenkins [http://jenkins.local/](http://jenkins.local/)
     
 	- Update Jenkins up to version 1.5 in panel Jenkins > Manage Jenkins
-        
-        If Automatical upgrade fails, just donwload and replace jenkins.war
-        
+
+	If Automatical upgrade fails, just donwload and replace jenkins.war
+
 	- Install SSH Credentials Plugin version 0.4 in panel Jenkins > Manage Jenkins > Manage Plugins
 
 	- Add SSH authorization from master to slaves
