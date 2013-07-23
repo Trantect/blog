@@ -264,7 +264,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
     | Prj_slave_02   | 18 min | 11    | 84     | 1096  | 11       | 1      |
     | Prj_no_cluster | 84 min | 42    | 223    | 3079  | 42       | 3      |
 
-	- Run test cases distributedly
+	- Run test cases distributedlyi
 
 		- Project Prj takes 30 sec to checkout latest code and push the latest code, data, config onto all the slaves.
 
