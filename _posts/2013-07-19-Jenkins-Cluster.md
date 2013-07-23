@@ -258,7 +258,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 	|  Project       | cost   | cases | assert | lines | DB flush | DB sync|
 	|:---------------|:-------|:------|:-------|:------|:---------|:-------|
-	| Prj            | 30 sec | checkout latest code and push the latest code, data, config onto all the slaves|
+	| Prj            | 30 sec | 0     | 0      | 0     | 0        | 0      |
 	| Prj_master     | 19 min | 12    | 63     | 1244  | 12       | 1      |
     | Prj_slave_01   | 23 min | 19    | 76     | 739   | 19       | 1      |
     | Prj_slave_02   | 18 min | 11    | 84     | 1096  | 11       | 1      |
