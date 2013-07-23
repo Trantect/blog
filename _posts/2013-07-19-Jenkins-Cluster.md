@@ -254,7 +254,7 @@ Please refer to [https://wiki.jenkins-ci.org/display/JENKINS/Use+Jenkins](https:
 
 - Performence
 
-	- Performence diff
+	- Performence comparison
 
 	|  Project       | cost   | cases | assert | lines | DB flush | DB sync|
 	|:---------------|:-------|:------|:-------|:------|:---------|:-------|
