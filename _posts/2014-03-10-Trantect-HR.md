@@ -34,23 +34,23 @@ We are ambitious and eager to devote ourselves into cutting-edge technologies.
 
 	> "Programming From The Ground Up" By Jonathan Bartlett 
     
-    > "Structure and Interpretation of Computer Programs" By Harold Abelson and Gerald Jay Sussman
+    	> "Structure and Interpretation of Computer Programs" By Harold Abelson and Gerald Jay Sussman
     
-    > "The C programming Language" By Brian W. Kernighan and Dennis M. Ritchie
+    	> "The C programming Language" By Brian W. Kernighan and Dennis M. Ritchie
     
-    > "The C++ Programming Language" By Bjarne Stroustrup
+    	> "The C++ Programming Language" By Bjarne Stroustrup
      
 - Object-Oriented Design and Programming
 
-	 > "An Introduction to Object-Oriented Programming" By Timothy Budd
+	> "An Introduction to Object-Oriented Programming" By Timothy Budd
     
 - Algorithm
 
 	> "Introduction to algorithms" By Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
     
-    > "The Algorithm Design Manual" By Steven S. Skiena
+    	> "The Algorithm Design Manual" By Steven S. Skiena
     
-    > "The Art of Computer Programming" By Donald Ervin Knuth
+	> "The Art of Computer Programming" By Donald Ervin Knuth
         
 - Design Pattern
 
