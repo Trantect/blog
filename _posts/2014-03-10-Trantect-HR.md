@@ -4,6 +4,7 @@ published: true
 
 
 # WHO WE ARE
+
 We are artisans in engineering world, working with both Chinese and international customers as well as developing our own products.
 We are ambitious and eager to devote ourselves into cutting-edge technologies.
 
@@ -12,10 +13,12 @@ We are ambitious and eager to devote ourselves into cutting-edge technologies.
 - We work following SCRUM principles and in pair
 - We are people of humility, honesty, modesty and ambitions, of course with sense of humor
     
+
 # WHY WORKING WITH US
 - We are awesome
 - Our products are awesome
 - You definitely want to be awesome
+
 
 # WHAT WE ARE LOOKING FOR
 - An artisan with sense of engineering, science and aesthetics
