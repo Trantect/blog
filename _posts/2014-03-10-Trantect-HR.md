@@ -13,17 +13,20 @@ We are ambitious and eager to devote ourselves into cutting-edge technologies.
 - We work following SCRUM principles and in pair
 - We are people of humility, honesty, modesty and ambitions, of course with sense of humor
     
+* * * *
 
 # WHY WORKING WITH US
 - We are awesome
 - Our products are awesome
 - You definitely want to be awesome
 
+* * * *
 
 # WHAT WE ARE LOOKING FOR
 - An artisan with sense of engineering, science and aesthetics
 - Strong learning ability, including comprehension and practice
 - No fear and dare to make mistakes
+
 
 
 ## Techical Requirements for candidates (Reading List)
@@ -88,6 +91,7 @@ For prospective candidates who apply for job positions in trantect, please conta
 	- Projects you have been involved in
 	- Natural Languages you speak (Chinese, English or others)
 	
+
 - Github Account (optional if you have experiences of open source projects)
 
 __We don´t require that you have all the skills written above, just would like to know you more, and customize the interview for you to present the best of you.__
