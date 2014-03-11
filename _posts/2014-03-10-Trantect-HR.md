@@ -72,17 +72,18 @@ If you have read and understood 50% of each of the content above, you are ready 
 
 ## Application Requirements
 For prospective candidates who apply for job positions in trantect, please contact us through email [jobs@trantect.com]( jobs@trantect.com) with following information
+
 - LinkedIn Account or CV (Curriculum vitae), including
-    - Basic personal information
-    - Programming Languages you use (C, C++, Java, Python, Perl, Javascript ...)
-    - Database management skills (MySQL, MongoDB, ...)
-    - Web programming frameworks you use
-    - Networking skills (Well-known protocols)
-    - Operating system skills (Linux, Unix/MacOS ...)
-    - Mobile system development skills (Android, iOS ...)
-    - Interests in technical and scientific fields
-    - Projects you have been involved in
-    - Natural Languages you speak (Chinese, English or others)
+	- Basic personal information
+	- Programming Languages you use (C, C++, Java, Python, Perl, Javascript ...)
+	- Database management skills (MySQL, MongoDB, ...)
+	- Web programming frameworks you use
+	- Networking skills (Well-known protocols)
+	- Operating system skills (Linux, Unix/MacOS ...)
+	- Mobile system development skills (Android, iOS ...)
+	- Interests in technical and scientific fields
+	- Projects you have been involved in
+	- Natural Languages you speak (Chinese, English or others)
 	
 - Github Account (optional if you have experiences of open source projects)
 
