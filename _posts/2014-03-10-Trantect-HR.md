@@ -2,7 +2,6 @@
 published: true
 ---
 
-
 # WHO WE ARE
 * * * *
 
@@ -125,9 +124,4 @@ __We don´t require that you have all the skills written above, just would like 
 
 ### You have to obey the following rules
 - Don't leave the room during the exam 
-- Don't send the source code or question files out of the room 
-
-
-
-
-
+- Don't send the source code or question files out of the room
