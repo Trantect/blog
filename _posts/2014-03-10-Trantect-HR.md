@@ -9,7 +9,7 @@ We are ambitious and eager to devote ourselves into cutting-edge technologies.
 
 - We boot up our systems through IPXE
 - We generate technical blog through jekyll and github page
-- We work following scrum rules and pair-programming
+- We work following SCRUM principles and in pair
 - We are people of humility, honesty, modesty and ambitions, of course with sense of humor
     
 # WHY WORKING WITH US
