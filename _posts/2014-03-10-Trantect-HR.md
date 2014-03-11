@@ -4,6 +4,7 @@ published: true
 
 
 # WHO WE ARE
+* * * *
 
 We are artisans in engineering world, working with both Chinese and international customers as well as developing our own products.
 We are ambitious and eager to devote ourselves into cutting-edge technologies.
@@ -14,15 +15,15 @@ We are ambitious and eager to devote ourselves into cutting-edge technologies.
 - We are people of humility, honesty, modesty and ambitions, of course with sense of humor
     
 * * * *
-
 # WHY WORKING WITH US
+* * * *
 - We are awesome
 - Our products are awesome
 - You definitely want to be awesome
 
 * * * *
-
 # WHAT WE ARE LOOKING FOR
+* * * *
 - An artisan with sense of engineering, science and aesthetics
 - Strong learning ability, including comprehension and practice
 - No fear and dare to make mistakes
@@ -75,6 +76,12 @@ If you have read and understood 50% of each of the content above, you are ready 
 - Do hehave the above to the people you are working with
 
 ## Click [Job Positions](http://www.trantect.com/#job_openings) to see more
+
+* * * *
+
+# Recruitment Guide
+
+* * * *
 
 ## Application Requirements
 For prospective candidates who apply for job positions in trantect, please contact us through email [jobs@trantect.com]( jobs@trantect.com) with following information
