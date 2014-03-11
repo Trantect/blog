@@ -89,13 +89,19 @@ For prospective candidates who apply for job positions in trantect, please conta
 
 __We don´t require that you have all the skills written above, just would like to know you more, and customize the interview for you to present the best of you.__
 
+
 ## The First Round Interview Guide
+
+### The process of first round interview
+
 1. We will present Trantect briefly and make an introduction of recruitment
 2. Testing
 3. You will do self-evaluation according to the testing result
 4. We will have a discussion about the standing points in your CV
 
-The testing part of interview simulates the working environment. 
+
+### The testing part of interview simulates the working environment
+
 - You will work on a computer installed with linux.
 - The questions are written in English.
 - The programming language used in this test is Java.
@@ -103,7 +109,7 @@ The testing part of interview simulates the working environment.
 - Try your best to archieve as many requirements as possible in 30 mins 
 - You can use any tool (Google, Wikipedia, etc.) or ask anybody (including phone call or asking the interviewer) for help 
 
-You have to obey the following rules
+### You have to obey the following rules
 - Don't leave the room during the exam 
 - Don't send the source code or question files out of the room 
 
