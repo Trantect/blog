@@ -34,11 +34,11 @@ We are ambitious and eager to devote ourselves into cutting-edge technologies.
 
 	> "Programming From The Ground Up" By Jonathan Bartlett 
     
-    	> "Structure and Interpretation of Computer Programs" By Harold Abelson and Gerald Jay Sussman
+	> "Structure and Interpretation of Computer Programs" By Harold Abelson and Gerald Jay Sussman
     
-    	> "The C programming Language" By Brian W. Kernighan and Dennis M. Ritchie
+	> "The C programming Language" By Brian W. Kernighan and Dennis M. Ritchie
     
-    	> "The C++ Programming Language" By Bjarne Stroustrup
+	> "The C++ Programming Language" By Bjarne Stroustrup
      
 - Object-Oriented Design and Programming
 
@@ -48,7 +48,7 @@ We are ambitious and eager to devote ourselves into cutting-edge technologies.
 
 	> "Introduction to algorithms" By Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
     
-    	> "The Algorithm Design Manual" By Steven S. Skiena
+	> "The Algorithm Design Manual" By Steven S. Skiena
     
 	> "The Art of Computer Programming" By Donald Ervin Knuth
         
@@ -73,7 +73,7 @@ If you have read and understood 50% of each of the content above, you are ready 
 ## Application Requirements
 For prospective candidates who apply for job positions in trantect, please contact us through email [jobs@trantect.com]( jobs@trantect.com) with following information
 - LinkedIn Account or CV (Curriculum vitae), including
-	- Basic personal information
+    - Basic personal information
     - Programming Languages you use (C, C++, Java, Python, Perl, Javascript ...)
     - Database management skills (MySQL, MongoDB, ...)
     - Web programming frameworks you use
