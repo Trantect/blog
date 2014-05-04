@@ -37,7 +37,7 @@ You can follow steps below to write and publish your blog.
 7. Tips for writing your blog
 - Preview: Using the preview button on the right tool list
 - Edit: The default mode for you to editing in Markdown
-- MetaData: 
+- Save: Commit the changes to github blog repository
 
 
 
