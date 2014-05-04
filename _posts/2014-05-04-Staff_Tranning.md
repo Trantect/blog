@@ -2,7 +2,7 @@
 published: false
 ---
 
-# ** Trantect New Emplyee Guide ** #
+# ** Trantect New Employee Guide ** #
 
 As a new employee in trantect, welcome to our elegent family first of all. This is the guide for you to envolved yourself into the trantect working environment. You will learn how to create your company account, how to write tech blog, how to use design tool for object-oriented programming, mandatory and solid knownledge you require as a professional programmer.
 
