@@ -84,6 +84,10 @@ To understand OS theory and to master linux are the compatible and unified proce
 1. “The Linux Command Line” By William Shott
 2. “Operating System Concepts” By Abraham Silberschatz, Peter B. Galvin and Greg Gagne
 
+## Git ##
+
+There are several main-stream version control tools, such as svn, macrurial, and git, which we choose to use for collabrative work.
+Go through [git docs](http://git-scm.com/documentation) to grap the general idea of git mechanism and usages in general scenarios.
 
 
 
