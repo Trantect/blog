@@ -125,7 +125,7 @@ __We don´t require that you have all the skills written above, just would like 
 
 - You will work on a computer installed with linux.
 - The questions are written in English.
-- The programming language used in this test is Java.
+- The programming language used in this test is one of languages, such as Java, C++.
 - You will use command line to compile, run and test the program.
 - Try your best to archieve as many requirements as possible in 30 mins 
 - You can use any tool (Google, Wikipedia, etc.) or ask anybody (including phone call or asking the interviewer) for help 
